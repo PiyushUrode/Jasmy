@@ -1,5 +1,5 @@
 import React from 'react'
-import "./app.css"
+import "./App.css"
 import Navbar from "./component/Navbar"
 import Header from "./component/Header"
 import Presale from "./component/Presale.jsx"
