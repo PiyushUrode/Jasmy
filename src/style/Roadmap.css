@@ -1,0 +1,641 @@
+.Roadmap-head{display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+.Roadmap-head h1{    font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(3, 0, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Roadmap-head p {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+.roadmap {
+  background-image: url(../images/roadmapback.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border: 2px solid brown; */
+  height: 700px;
+  position: relative;
+  /* max-width: 1500px ; */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* height: 100vh; */
+}
+
+
+.class {
+}
+.class1 {
+  border: 2px solid rgba(194, 5, 5, 0.414);
+  padding: 5px;
+  position: absolute;
+  bottom: 31%;
+  left: 26%;
+  width: 138px;
+}
+
+.class2 {
+  border: 2px solid white;
+  padding: 5px;
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 138px;
+}
+
+.class3 {
+  border: 2px solid white;
+  padding: 5px;
+  position: absolute;
+  top: 40%;
+  left: 46%;
+  width: 138px;
+}
+
+.class4 {
+  border: 2px solid white;
+  padding: 5px;
+  position: absolute;
+  top: 10%;
+  right: 34%;
+  width: 138px;
+}
+
+.class5 {
+  border: 2px solid white;
+  padding: 5px;
+  position: absolute;
+  bottom: 15%;
+  right: 14%;
+  width: 138px;
+}
+
+.class1 h1 {
+  font-size: 10px;
+}
+.class ul li {
+  font-size: 7px;
+}
+
+@media (min-width: 2000px) and (max-width: 2420px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 3%;
+    left: 37%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 18%;
+    left: 37%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 28%;
+    width: 138px;
+  }
+}
+
+/* @media (min-width: 1800px) and (max-width: 2000px) {
+        .class1{
+            border: 2px solid rgba(255, 255, 255, 0.59);
+            padding: 5px;
+            position: absolute;
+            bottom: 3%;
+            left: 35%;
+            width: 138px; ;
+        }
+        
+        
+        
+        .class2{
+            border: 2px solid rgba(255, 255, 255, 0.59);
+            padding: 5px;
+            position: absolute;
+            top: 18%;
+            left: 35%;
+            width: 138px; ;
+        }
+        
+        
+        
+        
+        .class3{
+            border: 2px solid rgba(255, 255, 255, 0.59);
+            padding: 5px;
+            positin: absolute;
+            top: 40%;
+            left: 48%;
+            width: 138px; ;
+        }
+        
+        
+        
+        
+        .class4{
+            border: 2px solid rgba(255, 255, 255, 0.59);
+            padding: 5px;
+            position: absolute;
+            top: 10%;
+            right : 40%;
+            width: 138px; ;
+        }
+        
+        .class5{
+            border: 2px solid rgba(255, 255, 255, 0.59);
+            padding: 5px;
+            position: absolute;
+            bottom: 15%;
+            right : 31%;
+            width: 138px; ;
+        }
+        } */
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    positin: absolute;
+    top: 40%;
+    left: 47%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 36%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 2%;
+    left: 33%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    positin: absolute;
+    top: 40%;
+    left: 47%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 36%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 18%;
+    left: 29%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    positin: absolute;
+    top: 40%;
+    left: 45%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 34%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 19%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 18%;
+    left: 23%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    positin: absolute;
+    top: 40%;
+    left: 45%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    right: 31%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 8%;
+    left: 21%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 21%;
+    left: 19%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    positin: absolute;
+    top: 40%;
+    left: 44%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 15%;
+    right: 24%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 18%;
+    right: 4%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 13%;
+    left: 18%;
+    width: 138px;
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 24%;
+    left: 16%;
+    width: 138px;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 2px;
+    positin: absolute;
+    top: 40%;
+    left: 38%;
+    width: 138px;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    top: 19%;
+    right: 24%;
+    width: 138px;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    bottom: 18%;
+    right: 2%;
+    width: 138px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .roadmap {
+    background-image: url(../images/BACKRES.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 2px solid brown;
+    height: 700px;
+    position: relative;
+    /* max-width: 1500px ; */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* height: 100vh; */
+  }
+
+  .class1 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+    top: 10%;
+
+    width: 70%;
+    height: fit-content;
+
+  }
+
+  .class2 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    width: 70%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+
+  .class3 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+
+  .class4 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+
+  .class5 {
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    padding: 5px;
+    position: absolute;
+    width: 70%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+}
+
+@media (min-width: 10px) and (max-width: 400px) {
+    .roadmap {
+      background-image: url(../images/BACKRES.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      border: 2px solid brown;
+      height: 700px;
+      position: relative;
+      /* max-width: 1500px ; */
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; /* height: 100vh; */
+    }
+  
+    .class1 {
+      border: 2px solid rgba(255, 255, 255, 0.59);
+      padding: 5px;
+      position: absolute;
+      /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+      top: 10%;
+  
+      width: 70%;
+      height: fit-content;
+  
+    }
+  
+    .class2 {
+      border: 2px solid rgba(255, 255, 255, 0.59);
+      padding: 5px;
+      position: absolute;
+      width: 70%;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: fit-content;
+    }
+  
+    .class3 {
+      border: 2px solid rgba(255, 255, 255, 0.59);
+      padding: 5px;
+      position: absolute;
+      width: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: fit-content;
+    }
+  
+    .class4 {
+      border: 2px solid rgba(255, 255, 255, 0.59);
+      padding: 5px;
+      position: absolute;
+      width: 70%;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: fit-content;
+    }
+  
+    .class5 {
+      border: 2px solid rgba(255, 255, 255, 0.59);
+      padding: 5px;
+      position: absolute;
+      width: 70%;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: fit-content;
+    }
+  }

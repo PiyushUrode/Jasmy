@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Santoshi', sans-serif;
+  /* font-family: Manrope,TypoGraphica, Gilroy,Raleway, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* src/index.css */
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/Variable/Satoshi-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+  
+}
+
+
+

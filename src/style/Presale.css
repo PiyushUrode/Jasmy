@@ -1,0 +1,190 @@
+.Presale {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 3rem;
+}
+
+
+.Presale-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 2rem;
+    /* gap: 5px;
+    border-radius: 20px;
+    position: relative;  
+  
+    /* background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);     -webkit-backdrop-filter: blur(10px);
+  
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);  */
+  }
+  
+  /* .Presale-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 7, 255, 0.4) 32%,
+      rgba(105, 109, 255, 1) 70%
+    );
+    filter: blur(1px); 
+    z-index: 1; 
+  } */
+  
+  /* Ensure content is on top of the background */
+
+
+  #connectwallet{background-image: url("../images/headercircle.svg")  ;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+  .Presale-left-a {
+    position: relative;
+    z-index: 10;
+  }
+  
+
+
+.price,
+.pricea,
+.pricec {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  width: 100%;
+}
+.buynow {
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#buynow1 {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+#btns {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: 400;
+  padding: 0.4rem;
+}
+
+#btns1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: 400;
+  padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+}
+
+.Presale-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 2rem;
+  gap: 10px;
+}
+
+
+.Presale-right-h1{font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(3,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+
+    .Presale-right-p{font-size: 1rem;
+       font-style:normal;
+       font-weight: 300;
+    padding-top: 1rem ;
+    padding-bottom:  1rem ;
+color: white;}
+
+#buynow{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 500px) and (max-width: 880px) {
+  
+.Presale{ display: flex;
+flex-direction: column;
+width: 100%;}
+
+.Presale-left{width: 100%;}
+
+
+    .Presale-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 2rem;
+        gap: 10px;
+      }
+
+
+      .Presale-right-h1{font-size: 4rem;
+        font-weight: 800;
+        background: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(3,0,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+    
+    
+        .Presale-right-p{font-size: 1.5rem;
+           font-style:normal;
+           font-weight: 300;
+        padding-top: 1rem ;
+        padding-bottom:  1rem ;
+    color: white;}
+
+
+
+    }

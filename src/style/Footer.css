@@ -1,0 +1,122 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items:  flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    /* flex-wrap: wrap; */
+    
+    /* width: 100vw; */
+
+}
+.logo {padding-bottom:1rem}
+.sectionheader{ font-weight: 800; padding-bottom:2rem; }
+.section-container{ font-weight: 500; padding: 0.3rem 0rem;}
+
+.section1{ display: flex;
+flex-direction: column;
+width: 30%;
+
+}
+.section1 p { line-height: 2;
+width: 50%;}
+
+.section2{
+   width: 20%;
+}
+.section3{
+    width: 20%;
+}
+.section4{
+    width: 20%;
+}
+
+.follow{ display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-weight: 700;
+width: 100vw;
+
+font-size: 2rem;
+border-top: 1px solid rgba(255, 255, 255, 0.538);
+border-bottom: 1px solid rgba(255, 255, 255, 0.384);
+}
+
+.socialmedia-icon{display: flex;
+    padding-top: 15px;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-a{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-b{    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* gap: 0.5rem; */
+    /* padding: 0.5rem;} */
+}
+
+
+@media (min-width: 100px) and (max-width: 680px) {
+
+    .section1 p { line-height: 2;
+        width: 70%;}   
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100vw;
+        }
+        .section1 , .section2 , .section3 , .section4 {width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .sectionheader  .section-container { display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+    .sectionheader{
+            padding: 0.8rem;
+            font-size: 1.5rem;
+
+        }
+
+        .follow{display: flex; flex-direction: column;
+        
+        }
+    
+   }
+
+   @media (min-width: 500px) and (max-width: 1480px) {
+
+   .section1 p { line-height: 2;
+    width: 70%;}
+
+   }

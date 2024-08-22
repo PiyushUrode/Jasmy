@@ -1,0 +1,111 @@
+.tokenomics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 2rem;
+    /* background-color: rgb(160, 157, 154); */
+    /* background-image: url("../style/logo.svg"); */
+  }
+  
+  .token-h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(
+      148deg,
+      rgba(255, 255, 255, 1) 10%,
+      rgba(3, 0, 255, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .token-h2 {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .details{display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 5rem;
+width: 100%;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 5rem;
+}
+
+.details1{ 
+display: flex; flex-direction: row;
+ gap: 5rem;
+padding: 1.5rem;
+
+}
+
+.contract{display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 50px;
+/* padding: 5rem; */
+/* width: 100vw; */
+flex-wrap: wrap;
+}
+
+.contract h1{ font-size: 2rem; text-wrap: balance; }
+
+#contactbutton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 2rem;
+  width: 200px;
+  border: 1px solid rgba(3,0,255,1);
+  -webkit-border-radius: 5px 50px 5px 50px;
+border-radius: 10px 10px 10px 10px;
+/* background-color: rgb(255, 255, 255); */
+background: -moz-linear-gradient(149deg, rgba(3,0,255,1) 0%, rgba(1,0,117,1) 100%);
+background: -webkit-linear-gradient(149deg, rgba(3,0,255,1) 0%, rgba(1,0,117,1) 100%);
+/* background: linear-gradient(149deg, rgba(3,0,255,1) 0%, rgba(1,0,117,1) 100%); */
+background: rgba(0, 0, 0, 0.445);
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endColorstr="#010075",GradientType=1);
+  background-blend-mode: normal;
+  box-shadow: inset  50px 50px 115px 58px  rgba(4, 0, 255, 0.412);
+
+
+}
+
+
+@media (min-width: 200px) and (max-width: 774px) {
+  .contract{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    padding: 2rem;
+    /* gap: 20px; */
+    
+    flex-wrap: wrap;
+    }
+    
+    .contract h1{ font-size: 1.5rem; text-wrap: wrap; }
+    .details{gap: 10px;}
+   
+  }
+
+  @media (min-width: 200px) and (max-width: 774px) {
+    .details1{
+    gap: 1px;
+    margin-left: 1px;
+
+  }}
