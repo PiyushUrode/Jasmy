@@ -1,13 +1,26 @@
 .feature {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem 2rem;
-  /* background-color: rgb(160, 157, 154); */
-  /* background-image: url("../style/logo.svg"); */
+  z-index: 1; /* Ensure content is above the background */
 }
+
+.feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/featurebgpic.svg") center / cover no-repeat;
+  opacity: 0.2; /* Set the desired opacity level for the background image */
+  z-index: -1; /* Place the background image behind the content */
+}
+
 
 .feature-h1 {
   font-size: 3rem;
@@ -23,8 +36,7 @@
 }
 .feature-h2 {
   font-size: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
 }
 
 .card-features {
@@ -36,7 +48,7 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
-  background-image: url("../images/featurebgpic.svg");
+
   background-repeat: no-repeat;
   background-position: center;
 }

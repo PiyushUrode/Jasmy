@@ -3,6 +3,7 @@ import "../style/Tokennomics.css";
 import token1 from "../images/token1.png";
 import copy from "../images/copy.svg";
 import Buttongradient from "../component/Map1";
+import Button3 from "../component/Button3"
 
 const Tokenomics = () => {
   return (
@@ -14,28 +15,33 @@ const Tokenomics = () => {
         <div className="details">
           <div className="details1">
             {" "}
-            <Buttongradient text1="Token" text2="Arzona Token" />{" "}
+            <Button3 leftText="Token" rightText="Arzona Token" />{" "}
           </div>
 
           <div className="details1">
             {" "}
-            <Buttongradient text1="Network" text2="BEP-20" />{" "}
+
+            <Button3 leftText="Network" rightText="BEP-20" />{" "}
           </div>
 
 
           <div className="details1">
             {" "}
-            <Buttongradient text1="Total Supply" text2="50 Billion" />{" "}
+
+            <Button3 leftText="Total Supply" rightText="50 Billion" />{" "}
+            
           </div>
 
           <div className="details1">
             {" "}
-            <Buttongradient text1="Decimal" text2="18" />{" "}
+
+            <Button3 leftText="Decimal" rightText="18" />{" "}
           </div>
 
           <div className="details1">
             {" "}
-            <Buttongradient text1="Symbol" text2="JASMY" />{" "}
+
+            <Button3 leftText="Symbol" rightText="JASMY" />{" "}
           </div>
 
 
@@ -48,7 +54,7 @@ const Tokenomics = () => {
           <h1 className="contract-h1">
             Contract Address  :- 
           </h1>
-          <h1 className="contract-h1">01234567A8B0C4D8E5F44R844RRW54FE64</h1>
+          <h1 className="contract-h2">01234567A8B0C4D8E5F44R844RRW54FE64</h1>
           <div>
             <button type="button" id="contactbutton" >
               {" "}

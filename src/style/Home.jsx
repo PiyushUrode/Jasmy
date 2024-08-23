@@ -8,6 +8,7 @@ import Tokenomics from '../component/Tokenomics.jsx';
 import Roadmap from '../component/Roadmap.jsx';
 import Footer from "../component/Footer.jsx";
 // import Button from "../component/button.jsx";
+import ButtonBlue from '../component/ButtonBlue.jsx';
 
 const Home = () => {
   return (
@@ -21,6 +22,8 @@ const Home = () => {
     <Roadmap/>
     {/* <Button/> */}
     <Footer/>
+    <ButtonBlue/>
+
     
     
     

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 1rem;
     /* background-color: rgb(160, 157, 154); */
     /* background-image: url("../style/logo.svg"); */
   }
@@ -23,8 +23,8 @@
   }
   .token-h2 {
     font-size: 2rem;
-    padding-top: 2rem;
     padding-bottom: 2rem;
+
   }
   
   .details{display: flex;
@@ -42,29 +42,41 @@ text-align: center;
 .details1{ 
 display: flex; flex-direction: row;
 align-items: center; justify-content: space-between;
- /* gap: 5rem;
-padding: 1.5rem; */
+ /* gap: 5rem;*/
+/* padding: 1rem;  */
 
 }
 
 .contract{display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 justify-content: center;
 text-align: center;
 width: 100%;
-gap: 30px;
+gap: 3rem;
 padding: 5rem;
 /* width: 100vw; */
 
 }
 
 .contract-h1{ font-size: 2rem; 
-  width: 100%;
+  
+  font-family: 'Santoshi', sans-serif;
+  font-weight: 400;
+  color: white;
  
   word-wrap: break-word;
+}
+
+.contract-h2{ font-size: 1.5rem; 
+  
+  font-family: 'Santoshi', sans-serif;
+  font-weight: 300;
+  color: #f9f9f9;
 
 }
+  
+
 
 #contactbutton{
   display: flex;
@@ -73,7 +85,7 @@ padding: 5rem;
   justify-content: center;
   text-align: center;
   gap: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 200px;
   border: 1px solid rgba(3,0,255,1);
   -webkit-border-radius: 5px 50px 5px 50px;
@@ -87,6 +99,7 @@ background: rgba(0, 0, 0, 0.445);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endColorstr="#010075",GradientType=1);
   background-blend-mode: normal;
   box-shadow: inset  50px 50px 115px 58px  rgba(4, 0, 255, 0.412);
+ 
 
 
 }
@@ -94,6 +107,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
 
 @media (min-width: 850px) and (max-width: 1150px) {
  .details {  padding: 1rem; }
+ .contract-h1{ font-size: 1.5rem; 
+  
+  font-family: 'Santoshi', sans-serif;
+  font-weight: 400;
+  color: white;
+ 
+  word-wrap: break-word;
+}
+
+.contract-h2{ font-size: 1rem; 
+  
+  font-family: 'Santoshi', sans-serif;
+  font-weight: 300;
+  color: #f9f9f9;
+
+}
 
 
 
@@ -104,13 +133,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
   /* .details1 {gap: 1rem;  padding: 0.5rem; } */
 
 .tokenomics{padding: 1rem;}
-  .contract{padding: 2rem 1rem 1rem 1rem;}
+  .contract{padding: 2rem 1rem 1rem 1rem; gap: 1rem; flex-direction: column;}
   .contract-h1{ font-size: 1.5rem; 
-   width: 100%;
-  
-   word-wrap: break-word;
+  }
+   
+
  
- }
 
  #contactbutton{font-size: 1rem; width: 150px; }
 
@@ -129,7 +157,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
       /* .details1 {gap: 1rem;  padding: 0.5rem; } */
 
       .tokenomics{padding: 1rem;}
-  .contract{padding: 2rem 1rem 1rem 1rem;}
+  .contract{padding: 2rem 1rem 1rem 1rem; flex-direction: column;}
   .contract-h1{ font-size: 1.5rem; 
    width: 100%;
   
