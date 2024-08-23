@@ -1,79 +1,16 @@
 import React from "react";
 import "../style/Presale.css"
-import img1 from "../images/headercircle.svg"
+// import img1 from "../images/headercircle.svg"
+import yt from "../images/presale/yt.svg"
+import usdt from "../images/presale/usdt.svg"
+import jasmy from "../images/presale/jasmy.svg"
 
 const Presale = () => {
   return (
     <>
+                  <div className='blurblack'></div>
       <div className="Presale">
         <div className="Presale-left">
-
-          {/* <div className="Presale-left-a"> 
-
-          <div className="buynow">
-
-                   <button type="submit" id="buynow1" className="bg-custom-gradient ">
-            {" "}
-            Connect Wallet
-          </button>
-          </div>
-
-
-          <div className="price">
-            <div className="pricea">
-              <h1> Listing Price</h1>
-              <h1> $0.20</h1>
-            </div>
-            <div className="priceb">
-              <a
-                target="_blank"
-                href="https://icons8.com/icon/99982/right-arrow"
-              >
-                Arrow
-              </a>{" "}
-              icon by <a target="_blank" href="https://icons8.com"></a>
-            </div>
-            <div className="pricec">
-              <h1> Listing Price</h1>
-              <h1> $0.20</h1>
-            </div>
-          </div>
-
-          <div className="buttons">
-            <h1>Buywith</h1>
-            <button type="submit" id="btns1" className=" ">
-              {" "}
-              USDT
-            </button>
-            <button type="submit" id="btns" className=" ">
-              {" "}
-              BUYNOW USDT
-            </button>
-            <h1> You Will Get</h1>
-            <button type="submit" id="btns" className="">
-              {" "}
-              Jasmy
-            </button>
-          </div>
-          <div className="buynow">
-          <button type="submit" id="buynow1" className="bg-custom-gradient ">
-            {" "}
-            Approve
-          </button>
-          </div>
- <div className="buynow">
- <img
-              alt="svgImg"
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGRjNEMDAiIGQ9Ik00My4yLDMzLjljLTAuNCwyLjEtMi4xLDMuNy00LjIsNGMtMy4zLDAuNS04LjgsMS4xLTE1LDEuMWMtNi4xLDAtMTEuNi0wLjYtMTUtMS4xYy0yLjEtMC4zLTMuOC0xLjktNC4yLTRDNC40LDMxLjYsNCwyOC4yLDQsMjRjMC00LjIsMC40LTcuNiwwLjgtOS45YzAuNC0yLjEsMi4xLTMuNyw0LjItNEMxMi4zLDkuNiwxNy44LDksMjQsOWM2LjIsMCwxMS42LDAuNiwxNSwxLjFjMi4xLDAuMywzLjgsMS45LDQuMiw0YzAuNCwyLjMsMC45LDUuNywwLjksOS45QzQ0LDI4LjIsNDMuNiwzMS42LDQzLjIsMzMuOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjAgMzFMMjAgMTcgMzIgMjR6Ij48L3BhdGg+Cjwvc3ZnPg=="
-            />
-          <button type="submit" id="buynow1" className="bg-custom-gradient ">
-            {" "}
-           {" "}
-            How To Buy Jasmy Coin{" "}
-          </button>
-  
-          </div>
-          </div> */}
 
 
 <div className="relative w-full max-w-md mx-auto p-6 rounded-lg shadow-lg  ">
@@ -92,8 +29,8 @@ const Presale = () => {
     </button>
 
     {/* Prices */}
-    <div className=" flex flex-row justify-center  items-center gap-6">
-      <div className="flex justify-center items-center text-base font-semibold  gap-2">
+    <div className=" flex  justify-center items-center gap-1 lg:gap-5  lg:flex-row  md:flex-row w-full sm:flex-row flex-wrap " >
+      <div className="flex justify-center items-center text-base font-semibold  gap-2  ">
         <h2>Listing Price:</h2>
         <h2 className="text-blue-200">$0.20</h2>
       </div>
@@ -119,20 +56,28 @@ const Presale = () => {
     </div>
 
     {/* Buy with */}
-    <div className="space-y-2">
-      <h2>Buy With</h2>
+    <div className="space-y-2 ">
+      <h2 className="flex items-center justify-start  ">Buy With</h2>
+      <div className=" flex flex-col gap-4">
+
+      <button className="flex items-center justify-center gap-1 w-1/2 lg:w-1/3  py-2 px-4 bg-white text-black rounded-lg shadow-md px-3">
+        
+        <img src={usdt} alt="USDT" className="w-5 h-5"/>
+        <h1>USDT</h1>
+      </button>
       <button className="flex items-center justify-end gap-4 w-full py-2 px-4 bg-white text-black rounded-lg shadow-md">
         USDT
-        <img src="usdt-icon-url" alt="USDT" className="w-5 h-5"/>
+        <img src={usdt} alt="USDT" className="w-5 h-5"/>
       </button>
+      </div>
     </div>
 
     {/* You Will Get */}
     <div className="space-y-2">
-      <h2>You Will Get</h2>
+      <h2 className="flex items-center justify-start" >You Will Get</h2>
       <button className="flex items-center justify-end gap-4 w-full py-2 px-4 bg-white text-black rounded-lg shadow-md">
         Jasmy
-        <img src="jasmy-icon-url" alt="Jasmy" className="w-5 h-5"/>
+        <img src={jasmy} alt="Jasmy" className="w-5 h-5"/>
       </button>
     </div>
 
@@ -143,7 +88,7 @@ const Presale = () => {
 
     {/* How To Buy */}
     <div className="flex justify-center items-center space-x-2 mt-4">
-      <img src="youtube-icon-url" alt="YouTube" className="w-6 h-6"/>
+      <img src={yt} alt="YouTube" className="w-6 h-6"/>
       <button className="text-sm text-blue-400 ">How To Buy VOIP Coins</button>
     </div>
   </div>

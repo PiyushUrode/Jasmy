@@ -11,7 +11,8 @@
   
   .token-h1 {
     font-size: 3rem;
-    font-weight: 800;
+    font-family: 'Santoshi', sans-serif;
+    font-weight: 700;
     background: linear-gradient(
       148deg,
       rgba(255, 255, 255, 1) 10%,
@@ -29,33 +30,41 @@
   .details{display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-gap: 5rem;
+ padding: 2rem; 
+gap: 3rem; 
 width: 100%;
+
 align-items: center;
-justify-content: center;
+justify-content: space-around;
 text-align: center;
-padding: 5rem;
 }
 
 .details1{ 
 display: flex; flex-direction: row;
- gap: 5rem;
-padding: 1.5rem;
+align-items: center; justify-content: space-between;
+ /* gap: 5rem;
+padding: 1.5rem; */
 
 }
 
 .contract{display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-gap: 50px;
-/* padding: 5rem; */
+width: 100%;
+gap: 30px;
+padding: 5rem;
 /* width: 100vw; */
-flex-wrap: wrap;
+
 }
 
-.contract h1{ font-size: 2rem; text-wrap: balance; }
+.contract-h1{ font-size: 2rem; 
+  width: 100%;
+ 
+  word-wrap: break-word;
+
+}
 
 #contactbutton{
   display: flex;
@@ -83,29 +92,50 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
 }
 
 
-@media (min-width: 200px) and (max-width: 774px) {
-  .contract{display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
-    padding: 2rem;
-    /* gap: 20px; */
-    
-    flex-wrap: wrap;
+@media (min-width: 850px) and (max-width: 1150px) {
+ .details {  padding: 1rem; }
+
+
+
+
+}
+@media (min-width: 450px) and (max-width: 850px) {
+  .details {gap: 1rem;  padding-top: 3rem; gap: 30px; }
+  /* .details1 {gap: 1rem;  padding: 0.5rem; } */
+
+.tokenomics{padding: 1rem;}
+  .contract{padding: 2rem 1rem 1rem 1rem;}
+  .contract-h1{ font-size: 1.5rem; 
+   width: 100%;
+  
+   word-wrap: break-word;
+ 
+ }
+
+ #contactbutton{font-size: 1rem; width: 150px; }
+
     }
-    
-    .contract h1{ font-size: 1.5rem; text-wrap: wrap; }
-    .details{gap: 10px;}
-   
-  }
 
-  @media (min-width: 200px) and (max-width: 774px) {
-    .details1{
-    gap: 1px;
-    margin-left: 1px;
 
-  }}
+    @media (min-width: 100px) and (max-width: 450px) {
+      .details {gap: 1rem;  padding: 1rem; gap: 30px; }
+
+.token-h1{font-size: 2.5rem}
+.token-h2{font-size: 1rem;     padding-top: 1rem;
+  padding-bottom: 1rem;}
+
+
+
+      /* .details1 {gap: 1rem;  padding: 0.5rem; } */
+
+      .tokenomics{padding: 1rem;}
+  .contract{padding: 2rem 1rem 1rem 1rem;}
+  .contract-h1{ font-size: 1.5rem; 
+   width: 100%;
+  
+   word-wrap: break-word;
+ 
+ }
+ #contactbutton{font-size: 1rem; width: 150px;}
+        }
+ 

@@ -4,7 +4,7 @@ import  img1 from"../images/about1.svg"
 const About = () => {
   return (
     <div className="About-section" id="about">
-              <div className='blurblack'></div>
+
         
       <h1 className="About-section-h1"> What is Jasmy ?</h1>
       <p className="About-section-p">About Jasmy Empowering Digital Transformation</p>

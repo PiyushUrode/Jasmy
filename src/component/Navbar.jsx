@@ -40,6 +40,7 @@ const Navbar = () => {
           <a href="#tokenomics" className="text-lg font-medium text-white hover:text-blue-500">Tokenomics</a>
           <a href="#roadmap" className="text-lg font-medium text-white hover:text-blue-500">Roadmap </a>
 
+
         </div>
 
         {/* New Button on the right */}
@@ -65,6 +66,7 @@ const Navbar = () => {
         <a href="#feature" className="block px-4 py-2 text-white hover:bg-blue-600">Feature</a>
         <a href="#tokenomics" className="block px-4 py-2 text-white hover:bg-blue-600">Tokenomics</a>
         <a href="#roadmap" className="block px-4 py-2 text-white hover:bg-blue-600">Roadmap</a>
+
         {/* <a href="#services" className="block px-4 py-2 text-white hover:bg-gray-100">Services</a> */}
         <button className="w-full hover:text-blue-600 text-white px-2 text-3xl font-extrabold py-8 ">Login</button>
       </div>

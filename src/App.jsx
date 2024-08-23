@@ -1,30 +1,15 @@
-import React from 'react'
-import "./App.css"
-import Navbar from "./component/Navbar"
-import Header from "./component/Header"
-import Presale from "./component/Presale.jsx"
-import About from "./component/About"
-import Feature from "./component/Feature.jsx"
-import Tokenomics from './component/Tokenomics'
-import Footer from "./component/Footer.jsx"
-import Roadmap from './component/Roadmap.jsx'
-import Map1 from './component/Map1.jsx'
+import React from 'react';
+import "./App.css";
+
+
+import Home from "../src/style/Home.jsx"
+
+
 
 const App = () => {
   return (
-<>
-<Navbar/>
-<Header/>
-<Presale/>
-<About/>
-<Feature/>
-<Tokenomics/>
-
-<Roadmap/>
-<Footer/>
-<Map1/>
-</>
-  )
+   <Home/>
+  );
 }
 
-export default App
+export default App;

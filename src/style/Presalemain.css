@@ -1,0 +1,89 @@
+Presale-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 2rem;
+    /* gap: 5px;
+    border-radius: 20px;
+    position: relative;  
+  
+    /* background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);     -webkit-backdrop-filter: blur(10px);
+  
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);  */
+  }
+  
+  #connectwallet{background-image: url("../images/headercircle.svg")  ;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+  .Presale-left-a {
+    position: relative;
+    z-index: 10;
+  }
+  
+
+
+.price,
+.pricea,
+.pricec {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  width: 100%;
+}
+.buynow {
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#buynow1 {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+#btns {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: 400;
+  padding: 0.4rem;
+}
+
+#btns1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: 400;
+  padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+}

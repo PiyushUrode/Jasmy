@@ -42,10 +42,13 @@ const Tokenomics = () => {
 
 
         </div>
+
+
         <div className="contract">
-          <h1>
-            <b> Contract Address </b>:- 01234567A8B0C4D8E5F44R844RRW54FE64
+          <h1 className="contract-h1">
+            Contract Address  :- 
           </h1>
+          <h1 className="contract-h1">01234567A8B0C4D8E5F44R844RRW54FE64</h1>
           <div>
             <button type="button" id="contactbutton" >
               {" "}

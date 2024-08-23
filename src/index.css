@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Santoshi', sans-serif;
-  /* font-family: Manrope,TypoGraphica, Gilroy,Raleway, sans-serif; */
+body {
+  font-family: 'Santoshi', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
@@ -19,25 +17,18 @@ body{
   -webkit-text-size-adjust: 100%;
 }
 
-/* src/index.css */
+/* Font faces with proper weight assignments */
 @font-face {
   font-family: 'Santoshi';
   src: url('../src/Fonts/Variable/Satoshi-Variable.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Santoshi';
-  src: url('../src/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Santoshi';
-  src: url('../src/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
-  font-weight: 800;
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -50,15 +41,72 @@ body{
 
 @font-face {
   font-family: 'Santoshi';
-  src: url('../src/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Adding lighter and extra bold weights */
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Santoshi';
+  src: url('../src/Fonts/WEB/fonts/Satoshi-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('../src/font2/sf-ui-display-cufonfonts/sf-ui-display-black-58646a6b80d5a.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('../src/font2/sf-ui-display-cufonfonts/sf-ui-display-bold-58646a511e3d9.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('../src/font2/sf-ui-display-cufonfonts/sf-ui-display-heavy-586470160b9e5.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('../src/font2/sf-ui-display-cufonfonts/sf-ui-display-medium-58646be638f96.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Santoshi';
-  src: url('../src/Fonts/WEB/fonts/Satoshi-Medium.ttf') format('truetype');
-  
+  font-family: 'SF';
+  src: url('../src/font2/sf-ui-display-cufonfonts/sf-ui-display-light-58646b33e0551.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
-
-
-

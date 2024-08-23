@@ -11,7 +11,8 @@
 
 .feature-h1 {
   font-size: 3rem;
-  font-weight: 800;
+  font-family: 'Santoshi', sans-serif;
+  font-weight: 700;
   background: linear-gradient(
     148deg,
     rgba(255, 255, 255, 1) 10%,
@@ -245,6 +246,15 @@
     justify-content: end;}
 
 @media (min-width: 250px) and (max-width: 850px) {
+
+  .feature{padding: 1rem;}
+
+  .feature-h1{  font-size: 2rem;}
+  .feature-h2 {
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
   .card-features {
     display: flex;
     flex-direction: column;
@@ -253,12 +263,28 @@
   }
 }
 
+@media (min-width: 300px) and (max-width: 400px) {
+  .card-features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+  .box1{width: 280px;}
+  .box2{width: 280px;}
+  .box3{width: 280px;}
+  .box4{width: 280px;}
+}
+
 
 
 @media (min-width: 850px) and (max-width: 1150px) {
     .card-features {
         display: flex;
+        
         flex-direction: row;
+        padding-top: 0.5rem;
+        padding-bottom  : 0.5rem;
     
         gap: 50px;
       }
