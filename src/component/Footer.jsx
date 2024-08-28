@@ -37,13 +37,16 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
                 <div className="social-media">
+
                   <h1 className='social-media-h1'> Follow Us :- </h1>
+                  <div className='icon1'>
+                    
                   <img src={social1} alt="" id='footer-icon' />
                   <img src={social2} alt=""  id='footer-icon'/>
                   <img src={social3} alt="" id='footer-icon'/>
                   <img src={social4} alt="" id='footer-icon'/>
                   <img src={social5} alt="" id='footer-icon'/>
-
+                  </div>
                 </div>
                 <div className="legal-links">
                     <a href="#">Privacy Policy</a>

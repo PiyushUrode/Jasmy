@@ -41,7 +41,7 @@ text-align: center;
 
 .details1{ 
 display: flex; flex-direction: row;
-align-items: center; justify-content: space-between;
+align-items: center; justify-content: space-evenly;
  /* gap: 5rem;*/
 /* padding: 1rem;  */
 
@@ -134,7 +134,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
 
 .tokenomics{padding: 1rem;}
   .contract{padding: 2rem 1rem 1rem 1rem; gap: 1rem; flex-direction: column;}
-  .contract-h1{ font-size: 1.5rem; 
+  .contract-h1 , .contract-h2{ font-size: 1.5rem; 
+    width: 90%;
+    word-wrap: break-word;
+ 
+    padding-left: 10px; padding-right: 10px;
+ 
+   
+    word-wrap: break-word;
+  
   }
    
 
@@ -157,9 +165,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0300ff",endCo
       /* .details1 {gap: 1rem;  padding: 0.5rem; } */
 
       .tokenomics{padding: 1rem;}
-  .contract{padding: 2rem 1rem 1rem 1rem; flex-direction: column;}
-  .contract-h1{ font-size: 1.5rem; 
-   width: 100%;
+  .contract{padding: 2rem 1rem 1rem 1rem; flex-direction: column;
+  gap: 1rem; padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  .contract-h1 , .contract-h2{ font-size: 1.5rem; 
+   width: 90%;
+   word-wrap: break-word;
+
+   padding-left: 10px; padding-right: 10px;
+
   
    word-wrap: break-word;
  
