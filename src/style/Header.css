@@ -11,7 +11,7 @@
   background-size: cover;
 
   /* Box shadow with inset to create a shadow inside the header */
-  box-shadow: inset 0px -10px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -10px 15px rgb(0, 0, 0);
 
   /* Sizing */
   height: 100vh;
@@ -31,7 +31,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.064);
   z-index: -1;
 }
 
@@ -65,7 +65,7 @@
 
 .h1 {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   /* border: 1px solid rgba(255, 255, 255, 0.042); */
   /* padding: 10px; */
   border-radius: 20px;
@@ -139,7 +139,7 @@ padding: 2rem;
   bottom: 1px;
   z-index: 2;
 padding: 2rem;
-  background: rgba(0, 0, 0, 0.303);
+background: rgb(0 0 0 / 16%);
   /* opacity: 50%; */
 backdrop-filter: blur(2px);
   

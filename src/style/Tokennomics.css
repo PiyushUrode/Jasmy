@@ -47,17 +47,23 @@ align-items: center; justify-content: space-evenly;
 
 }
 
-.contract{display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 100%;
-gap: 3rem;
-padding: 5rem;
-/* width: 100vw; */
-
+.contract {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  gap: 30px;
+  padding: 1.2rem;
+  border-radius: 30px;
+  border:2px solid rgba(2, 0, 117, 0.222);;
+  -webkit-background-clip: padding-box; /* Ensures the background gradient respects border-radius */
+  background-clip: padding-box; /* Ensures the background gradient respects border-radius */
+  color: #fff; /* Optional: Ensure text is visible against the gradient */
 }
+
+
 
 .contract-h1{ font-size: 2rem; 
   
@@ -70,9 +76,10 @@ padding: 5rem;
 
 .contract-h2{ font-size: 1.5rem; 
   
+  
   font-family: 'Santoshi', sans-serif;
   font-weight: 300;
-  color: #f9f9f9;
+  color: #f9f9f9e0;
 
 }
   

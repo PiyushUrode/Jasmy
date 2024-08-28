@@ -4,12 +4,16 @@ import "../style/Presale.css"
 import yt from "../images/presale/yt.svg"
 import usdt from "../images/presale/usdt.svg"
 import jasmy from "../images/presale/jasmy.svg"
+import blur1 from "../images/Ellipse3.png"
+import blur2 from "../images/Ellipse4.png"
 
 const Presale = () => {
   return (
     <>
                   <div className='blurblack'></div>
-      <div className="Presale">
+      <div className="Presale  ">
+      {/* <img src={blur1} alt="/" className="absolute top-0  right-0"/> */}
+      {/* <img src={blur2} alt="/" className="absolute "/> */}
         <div className="Presale-left">
 
 
@@ -95,7 +99,7 @@ const Presale = () => {
 
 
         <div className="Presale-right ">
-          <img src="" alt="" />
+         
           <h1 className="Presale-right-h1"> Jasmy Presale</h1>
           <p className="Presale-right-p">
             {" "}
