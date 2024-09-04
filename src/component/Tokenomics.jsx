@@ -1,4 +1,7 @@
-import React from "react";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../style/Tokennomics.css";
 import token1 from "../images/token1.png";
 import copy from "../images/copy.svg";
@@ -6,13 +9,23 @@ import Buttongradient from "../component/Map1";
 import Button3 from "../component/Button3"
 
 const Tokenomics = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: true,
+    });
+    AOS.refresh(); // Ensure AOS refreshes to catch all elements
+  }, []);
+
   return (
     <>
-      <div className="tokenomics" id="tokenomics">
+      <div className="tokenomics" id="tokenomics"       data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-duration="1000">
         <h1 className="token-h1"> Tokenomics</h1>
         <h2 className="token-h2"> Exploring JASMY's Tokenomics Structure </h2>
-        <img src={token1} alt="" />
-        <div className="details">
+        <img src={token1} alt=""       data-aos="zoom-in"  data-aos-easing="linear"
+        />
+        <div className="details" data-aos="zoom-in"  data-aos-easing="linear" data-aos-duration="1100">
           <div className="details1">
             {" "}
             <Button3 leftText="Token" rightText="Arzona Token" />{" "}
@@ -50,11 +63,12 @@ const Tokenomics = () => {
         </div>
 
 
-        <div className="contract">
+        <div className="contract" data-aos="zoom-in"  data-aos-easing="linear" data-aos-duration="1200"
+        >
           <h1 className="contract-h1">
             Contract Address  :- 
           </h1>
-          <h1 className="contract-h2">01234567A8B0C4D8E5F44R844RRW54FE64</h1>
+          <h1 className="contract-h2"> 0x6b29043913cb352e82011551e388f510c1695e8c</h1>
           <div>
             <button type="button" id="contactbutton" >
               {" "}

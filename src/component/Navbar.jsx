@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../images/logo.svg";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -41,8 +42,10 @@ const Navbar = () => {
 
           {/* New Button on the right */}
           <div className="hidden md:flex space-x-4">
+          <Link to="/Stages">
             <button className="bg-custom-gradient text-white px-4 py-2 rounded-md">Login</button>
-          </div>
+          </Link>
+        </div>
 
           {/* Hamburger menu button for mobile */}
           <button
@@ -62,7 +65,9 @@ const Navbar = () => {
           <a href="#feature" className="block px-4 py-2 text-white hover:bg-blue-600">Feature</a>
           <a href="#tokenomics" className="block px-4 py-2 text-white hover:bg-blue-600">Tokenomics</a>
           <a href="#roadmap" className="block px-4 py-2 text-white hover:bg-blue-600">Roadmap</a>
+          <Link to="/Stages">
           <button className="w-full hover:text-blue-600 text-white px-2 text-2xl font-bold py-8">Login</button>
+        </Link>
         </div>
       </nav>
   );

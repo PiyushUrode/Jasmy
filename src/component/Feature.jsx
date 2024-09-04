@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../style/Feature.css";
 import img1 from "../images/icon-a.svg";
 import img2 from "../images/icon-b.svg";
@@ -8,16 +10,25 @@ import img4 from "../images/icon-d.svg";
 import arrow from "../images/arrow.svg";
 
 const Feature = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: true,
+    });
+    AOS.refresh(); // Ensure AOS refreshes to catch all elements
+  }, []);
+
   return (
     <>
-      <div className="feature" id="feature">
+      <div className="feature" id="feature" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <h1 className="feature-h1"> Features</h1>
         <h2 className="feature-h2">
           {" "}
           Key Features of Jasmy Token Development{" "}
         </h2>
 
-        <div className="card-features">
+        <div className="card-features" data-aos="fade-down-right"> 
           <div className="cardA">
             <div className="box1">
               <div className="box-a">

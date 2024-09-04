@@ -1,4 +1,7 @@
-import React from 'react'
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../style/Footer.css"
 import logo from "../images/logo.svg"
 import social1 from "../images/social1.svg"
@@ -7,16 +10,27 @@ import social3 from "../images/social3.svg"
 import social4 from "../images/social4.svg"
 import social5 from "../images/social5.svg"
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1200,
+          easing: "ease-in-out",
+          once: true,
+        });
+        AOS.refresh(); // Ensure AOS refreshes to catch all elements
+      }, []);
   return (
    <>
 
-<footer className="footer">
-            <div className="footer-container">
-                <div className="footer-logo">
+<footer className="footer"
+>
+            <div className="footer-container"      >
+                <div className="footer-logo"
+                 data-aos="fade-right" >
                     <img src={logo} alt="Jasmy" />
                     <p>Empowering digital innovation with secure, scalable utility tokens. Join JASMY on the journey to the future.</p>
                 </div>
-                <div className="footer-links">
+                <div className="footer-links"
+                 data-aos="fade-left" >
                     <div>
                         <h4>Resources</h4>
                         <ul>
@@ -35,7 +49,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-bottom">
+            <div className="footer-bottom"       >
                 <div className="social-media">
 
                   <h1 className='social-media-h1'> Follow Us :- </h1>

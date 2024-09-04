@@ -1,4 +1,7 @@
-import React from "react";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../style/Presale.css"
 // import img1 from "../images/headercircle.svg"
 import yt from "../images/presale/yt.svg"
@@ -7,11 +10,29 @@ import jasmy from "../images/presale/jasmy.svg"
 import blur1 from "../images/Ellipse3.png"
 import blur2 from "../images/Ellipse4.png"
 
+
 const Presale = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in",
+      once: true,
+    });
+    AOS.refresh(); // Ensure AOS refreshes to catch all elements
+  }, []);
+
   return (
     <>
                   <div className='blurblack'></div>
-      <div className="Presale  ">
+      <div  
+
+      className="Presale"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      
+      
+      
+      >
       {/* <img src={blur1} alt="/" className="absolute top-0  right-0"/> */}
       {/* <img src={blur2} alt="/" className="absolute "/> */}
         <div className="Presale-left">
@@ -21,14 +42,14 @@ const Presale = () => {
 
 <div className="feature-car">
   {/* Background Blur Layer */}
-  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-20 rounded-lg backdrop-blur-lg" id="presaleborder"></div>
+  <div   className="absolute inset-0 bg-gradient-to-r  opacity-20 rounded-lg backdrop-blur-lg" id="presaleborder" data-aos="fade-right" ></div>
   {/* 
   bg-presalebg1
   bg-gradient-to-r from-blue-600 to-blue-800
   */}
 
   {/* Content */}
-  <div className="relative z-10 space-y-6 text-white text-center" id="connectwallet">
+  <div className="relative z-10 space-y-6 text-white text-center" id="connectwallet" >
     {/* Connect Wallet */}
     <button className="bg-custom-gradient text-white py-2 px-4 rounded-lg border-2 border-blue-500 hover:border-white hover:shadow-lg transition-all duration-300">
       Connect Wallet
@@ -98,7 +119,7 @@ const Presale = () => {
 
 
 
-        <div className="Presale-right ">
+        <div className="Presale-right " data-aos="fade-left">
          
           <h1 className="Presale-right-h1"> Jasmy Presale</h1>
           <p className="Presale-right-p">

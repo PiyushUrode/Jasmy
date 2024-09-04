@@ -5,16 +5,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow-x: hidden;
   
   /* Background image */
   background: url(../images/headerbg.svg) no-repeat center center;
   background-size: cover;
 
   /* Box shadow with inset to create a shadow inside the header */
-  box-shadow: inset 0px -10px 15px rgb(0, 0, 0);
+  box-shadow: inset 0px -10px 15px rgba(0, 0, 0, 0.889);
 
   /* Sizing */
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
 
   /* Text styling */
@@ -31,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.064);
+  /* background: rgba(0, 0, 0, 0.132); */
   z-index: -1;
 }
 
@@ -53,7 +54,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  width: fit-content;
+  max-width: 1000px;
   /* gap: 1rem; */
   /* padding: 4rem 2rem 4rem 2rem; */
   background-image: url(../images/headercircle.svg);
@@ -64,20 +66,77 @@
 }
 
 .h1 {
-  font-weight: 300;
+  animation: tracking-in-expand-fwd 2s ease-out;
+  font-family: 'Satoshi' , 'sans-serif';
+  font-weight: 400;
   font-size: 1.2rem;
   /* border: 1px solid rgba(255, 255, 255, 0.042); */
   /* padding: 10px; */
   border-radius: 20px;
   /* background-color: rgba(255, 255, 255, 0.071); */
+ 
 }
+
+
+
+
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+  }
+  40% {
+      opacity: 0.6;
+  }
+  100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+  }
+  40% {
+      opacity: 0.6;
+  }
+  100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
 .h2 {
-  font-family: 'SF', sans-serif;
+  font-family: 'Satoshi' , 'sans-serif';
+  /* animation: tracking-in-expand-fwd 4s ease-in; */
+
   font-weight: 600;
-  font-size: 2.9rem;
+  font-size: 4rem;
 }
+
+/*fade in  */
+
+
 .p {
   font-weight: 400;
+  /* animation: tracking-in-expand-fwd 2s ease-out; */
   width: 100%;
   font-size: 1rem;
 }
@@ -128,32 +187,69 @@ padding: 2rem;
   border-radius: 8px;
 }
 
+@keyframes fade-up {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Move the element 20px down from its initial position */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move the element back to its original position */
+  }
+}
+
+/* WebKit-prefixed version for older browsers */
+@-webkit-keyframes fade-up {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }}
+
+
 .blurblack1{
-  /* position: relative; */
+  /* position: absolute; */
+  opacity: 0; 
+transition: opacity 0.5s ease; 
+  animation: fade-up 1s ease-out; 
+  -webkit-animation: fade-up 1s ease-out; 
+  
   width: 100vw;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 1px;
+  bottom: 20px;
   z-index: 2;
 padding: 2rem;
-background: rgb(0 0 0 / 16%);
-  /* opacity: 50%; */
-backdrop-filter: blur(2px);
+background: rgba(0, 0, 0, 0);
+
+  /* opacity: 50%;
+/* backdrop-filter: blur(2px);  */
   
 }
+.animated-blurblack1 {
+  -webkit-animation: fade-up 1s ease-out;
+  animation: fade-up 1s ease-out;
+  opacity: 1; 
+}
 
-.backshadow2{
+/* .backshadow2{
   position: absolute;
   box-shadow: inset 0px -10px 15px rgba(0, 0, 0, 0.758);
   width: 100vw;
   height: 100vh;
-  /* top: 3px; */
+   top: 3px; 
   left: 0;
   z-index: -1;
-}
+} */
 
 /* .blurblack{
     width: 100%;
@@ -213,7 +309,7 @@ backdrop-filter: blur(2px);
       width: 100%;
     }
   
-    .images-5{gap: 2rem;}
+    .images-5{gap: 20px;}
     .header-button {
       padding: 1rem;
         display: flex;
@@ -273,7 +369,7 @@ backdrop-filter: blur(2px);
 
     
   
-    .images-5{gap: 1rem;}
+    .images-5{gap: 10px;}
 
     .header-button {
       padding: 1rem;

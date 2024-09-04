@@ -1,17 +1,30 @@
-import React from 'react'
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../style/Roadmap.css"
 
 const Roadmap = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in",
+      once: true,
+    });
+    AOS.refresh(); // Ensure AOS refreshes to catch all elements
+  }, []);
+
   return (
 <>
 
-<div className=' Roadmap-head'>
+<div className=' Roadmap-head'       data-aos="fade-up"
+ data-aos-anchor-placement="top-bottom"> 
   <h1> Roadmap</h1>
   <p> The Road Ahead JASMY's Vision for the Future</p>
 </div>
 
 
-<div className='roadmap' id='roadmap'>  
+<div className='roadmap' id='roadmap'  data-aos="zoom-in">  
   <div className='class'>  
     <div className="class1">
   <h1>  Q1 </h1>

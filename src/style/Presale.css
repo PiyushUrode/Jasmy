@@ -34,6 +34,31 @@
 
 
 /*  */
+@keyframes fade-up {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Move the element 20px down from its initial position */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move the element back to its original position */
+  }
+}
+
+/* WebKit-prefixed version for older browsers */
+@-webkit-keyframes fade-up {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }}
+
+
 
 
 .Presale {
@@ -43,7 +68,19 @@
   justify-content: center;
   text-align: left;
   /* padding: 3rem; */
+
+
+  animation: fade-up 1s ease-out; /* Adjust duration and easing function as needed */
+  -webkit-animation: fade-up 1s ease-out; 
 }
+
+.animated-blurblack1 {
+  -webkit-animation: fade-up 1s ease-out;
+  animation: fade-up 1s ease-out;
+  opacity: 1; 
+}
+
+
 
 .blurblack{
   width: 100%;

@@ -1,0 +1,125 @@
+/* animations.css */
+
+/* Define the scale-up-center animation */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Define other animations as needed */
+@-webkit-keyframes fade-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+/* Animation class names */
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+    animation: scale-up-center 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+.fade-up {
+    -webkit-animation: fade-up 0.8s ease-out;
+    animation: fade-up 0.8s ease-out;
+}
+
+/* Common class for animated elements */
+.animated-element {
+    opacity: 0; /* Start hidden */
+}
+
+
+
+
+/* fade up */
+
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Move the element 20px down from its initial position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move the element back to its original position */
+    }
+  }
+  
+  /* WebKit-prefixed version for older browsers */
+  @-webkit-keyframes fade-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }}
+  
+  
+  .blurblack1{
+    /* position: absolute; */
+    animation: fade-up 1s ease-out; /* Adjust duration and easing function as needed */
+    -webkit-animation: fade-up 1s ease-out; /*
+    
+    width: 100vw;
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0; 
+  transition: opacity 0.5s ease; /* Optional: smooth opacity transition */
+  
+    /* opacity: 50%;
+  /* backdrop-filter: blur(2px);  */
+    
+  }
+  .animated-blurblack1 {
+    -webkit-animation: fade-up 1s ease-out;
+    animation: fade-up 1s ease-out;
+    opacity: 1; 
+  }
